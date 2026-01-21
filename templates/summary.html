@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logical Framework Summary</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+
+        <h1 class="page-title">Logical Framework Summary</h1>
+
+        <div class="summary-section">
+            <h3>Problem</h3>
+            <p>{{ lfa.problem }}</p>
+        </div>
+
+        <div class="summary-section">
+            <h3>Student Outcome</h3>
+            <p>{{ lfa.student_outcome }}</p>
+        </div>
+
+        <div class="summary-section">
+            <h3>Activities</h3>
+            <p>{{ lfa.activities }}</p>
+        </div>
+
+        <div class="summary-section">
+            <h3>Stakeholders</h3>
+            <p>{{ lfa.stakeholders }}</p>
+        </div>
+
+        <div class="summary-section">
+            <h3>Indicators</h3>
+            <p>{{ lfa.indicators }}</p>
+        </div>
+
+        <div class="success">
+            ✅ Program Design Completed Successfully
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

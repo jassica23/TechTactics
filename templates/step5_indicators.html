@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="header">
+    <h1>Step 5: Success Indicators</h1>
+    <p>How will success and impact be measured?</p>
+</div>
+
+<div class="step-indicator">Step 5 of 5</div>
+
+<form method="POST">
+    {% csrf_token %}
+    <label>Indicators & Metrics</label>
+    <textarea name="indicators" rows="6"
+        placeholder="Example: Test scores, attendance rate, assessment reports..."
+        required></textarea>
+
+    <button type="submit">Finish ✔</button>
+</form>
+
+{% endblock %}

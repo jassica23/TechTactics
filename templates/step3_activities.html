@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="header">
+    <h1>Step 3: Key Activities</h1>
+    <p>Actions that will lead to the desired outcomes</p>
+</div>
+
+<div class="step-indicator">Step 3 of 5</div>
+
+<form method="POST">
+    {% csrf_token %}
+    <label>Planned Activities</label>
+    <textarea name="activities" rows="6"
+        placeholder="Example: Teacher training, classroom interventions, assessments..."
+        required></textarea>
+
+    <button type="submit">Next →</button>
+</form>
+
+{% endblock %}

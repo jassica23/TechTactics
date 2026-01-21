@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="header">
+    <h1>Step 4: Stakeholders</h1>
+    <p>Who is involved in implementing this program?</p>
+</div>
+
+<div class="step-indicator">Step 4 of 5</div>
+
+<form method="POST">
+    {% csrf_token %}
+    <label>Stakeholders</label>
+    <textarea name="stakeholders" rows="6"
+        placeholder="Example: Teachers, school leaders, NGOs, government bodies..."
+        required></textarea>
+
+    <button type="submit">Next →</button>
+</form>
+
+{% endblock %}
